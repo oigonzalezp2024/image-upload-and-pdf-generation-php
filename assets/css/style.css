@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f8;
+  padding: 20px;
+}
+
+.card {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input[type=file],
+select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 6px;
+}
+
+button {
+  margin-top: 18px;
+  padding: 10px 14px;
+  background: #0f2b56;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #153c7a;
+}

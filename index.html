@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ticket Generator</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta name="description" content="Optimize your business with our 5.5 × 9 cm Ticket Generator. Create professional, custom PDF tickets in seconds. Upload your logo and barcode to generate print-ready tickets.">
+    </head>
+
+    <body>
+        <div class="card">
+            <h1>Generate PDF Ticket</h1>
+            <form action="generar.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="logo">Main Logo (Top):</label>
+                    <input type="file" id="logo" name="logo" accept="image/jpeg, image/png, image/webp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="barcode">Barcode (Optional):</label>
+                    <input type="file" id="barcode" name="barcode" accept="image/jpeg, image/png, image/webp">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="withBarcode" name="withBarcode" value="1">
+                    <label for="withBarcode">Include Barcode</label>
+                </div>
+
+                <button type="submit" class="btn">Generate PDF</button>
+            </form>
+        </div>
+    </body>
+</html>
